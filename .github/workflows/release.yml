@@ -1,0 +1,13 @@
+name: Release
+on:
+  workflow_dispatch:
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - run: |
+          git clone https://github.com/cs2-server-blacklist-manager/cs2-server-blacklist.git .
+          git checkout
+          gh release create v${{github.run_id}} --prerelease
