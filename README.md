@@ -5,4 +5,4 @@ Removes bad servers from your server list
 Run cs2-server-blacklist-enable.ps1
 
 # I am a server owner and my server was blacklisted
-Open an issue
+Open an issue with the unblacklist label
